@@ -41,8 +41,7 @@ public class ScriptGameController : MonoBehaviour {
 			transform.position.y,
 			0.0f
 			);
-			Quaternion spawnRotation = Quaternion.identity;
-			Instantiate (ball, spawnPosition, spawnRotation);
+			Instantiate (ball, spawnPosition, Quaternion.identity);
 
 			yield return new WaitForSeconds(Random.Range(1.0f, 2.0f));
 		}
